@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html lang="zh-Cn"> <!--zh-Cn是设置中文  , en是设置英文 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 为什么/ 表示文件夹public       设置了静态文件拖管，传递的参数是一个到public的绝对路径-->
+    <link rel="stylesheet" href="/css/reset.css">   
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <title>mz后台管理系统</title>
+</head>
+<body>
+   <!-- <div class="wang-side">侧边栏</div>    提出去-->
+   <!--提取出去以后使用include引入侧边栏和头部 -->
+   <%- include('./common/side.ejs'); %>
+   <div class="wang-main">
+       <!-- <div class="wang-head">头部</div>    提出去-->
+       <%- include('./common/head.ejs'); %>
+       <div class="wang-body">主体</div>
+   </div>
+</body>
+</html>
